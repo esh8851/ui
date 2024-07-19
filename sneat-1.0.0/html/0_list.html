@@ -581,12 +581,12 @@
                   <nav aria-label="breadcrumb">
                     <ol class="breadcrumb breadcrumb-style1">
                       <li class="breadcrumb-item">
-                        <a href="javascript:void(0);">Home</a>
+                        <a href="javascript:void(0);">Page&nbsp;1</a>
                       </li>
                       <li class="breadcrumb-item">
-                        <a href="javascript:void(0);">Library</a>
+                        <a href="javascript:void(0);">Page&nbsp;2</a>
                       </li>
-                      <li class="breadcrumb-item active">Data</li>
+                      <li class="breadcrumb-item active">Default</li>
                     </ol>
                   </nav>
                   <!--/ Custom style1 Breadcrumb -->
@@ -596,8 +596,8 @@
                       <div class="mb-3">
                         <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                           <option selected="">Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
+                          <option value="1" selected="">N</option>
+                          <option value="2">Y</option>
                           <option value="3">Three</option>
                         </select>
                       </div>
@@ -606,8 +606,8 @@
                       <div class="mb-3">
                         <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                           <option selected="">Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
+                          <option value="1">N</option>
+                          <option value="2" selected="">Y</option>
                           <option value="3">Three</option>
                         </select>
                       </div>
@@ -616,18 +616,18 @@
                       <div class="mb-3">
                         <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                           <option selected="">Open this select menu</option>
-                          <option value="1">One</option>
+                          <option value="1" selected="">수정일</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
                       </div>
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="2024-06-05"
                           aria-describedby="defaultFormControlHelp">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="2024-07-05"
                           aria-describedby="defaultFormControlHelp">
                     </div>
                   </div>
@@ -636,14 +636,14 @@
                       <div class="mb-3">
                         <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                           <option selected="">Open this select menu</option>
-                          <option value="1">One</option>
+                          <option value="1" selected="">검색구분</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
                       </div>
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                      <input type="text" class="form-control" id="defaultFormControlInput" placeholder="검색어"
                         aria-describedby="defaultFormControlHelp">
                     </div>
                     <div class="col">
@@ -667,6 +667,8 @@
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
+                        <option value="4">four</option>
+                        <option value="5" selected="">5</option>
                       </select>
                     </div>
                   </div>
@@ -676,85 +678,91 @@
                       <div class="table-responsive text-nowrap">
                         <table class="table">
                           <thead>
-                            <tr class="text-nowrap">
+                            <tr class="text-nowrap text-center">
                               <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
                               <th>#</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
-                              <th>Table heading</th>
+                              <th>코드그룹 코드</th>
+                              <th>코드그룹 이름</th>
+                              <th>코드</th>
+                              <th>대체 코드</th>
+                              <th>코드 이름</th>
+                              <th>코드 이름(영문)</th>
+                              <th>사용</th>
+                              <th>순서</th>
+                              <th>등록일</th>
+                              <th></th>
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
+                            <tr class="text-center">
                               <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
-                              <td scope="row">1</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
+                              <td scope="row">171</td>
+                              <td>57</td>
+                              <td>테테테</td>
+                              <td>278</td>
+                              <td></td>
+                              <td><span class="text-primary">ㅁㄴㅇㄹ</span></td>
+                              <td></td>
+                              <td>Y</td>
+                              <td>1</td>
+                              <td>2023-10-12 16:02:31</td>
+                              <td>20</td>
                             </tr>
-                            <tr>
+                            <tr class="text-center">
                               <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
-                              <td scope="row">2</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
+                              <td scope="row">170</td>
+                              <td>33</td>
+                              <td>로그인.로그인UI</td>
+                              <td>272</td>
+                              <td></td>
+                              <td><span class="text-primary">사용자</span></td>
+                              <td></td>
+                              <td>Y</td>
+                              <td>1</td>
+                              <td></td>
+                              <td></td>
                             </tr>
-                            <tr>
+                            <tr class="text-center">
                               <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
-                              <td scope="row">3</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
+                              <td scope="row">169</td>
+                              <td>33</td>
+                              <td>로그인.로그인UI</td>
+                              <td>273</td>
+                              <td></td>
+                              <td><span class="text-primary">관리자</span></td>
+                              <td></td>
+                              <td>Y</td>
+                              <td>2</td>
+                              <td></td>
+                              <td></td>
                             </tr>
-                            <tr>
+                            <tr class="text-center">
                               <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
-                              <td scope="row">4</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
+                              <td scope="row">168</td>
+                              <td>32</td>
+                              <td>qna.타입</td>
+                              <td>266</td>
+                              <td></td>
+                              <td><span class="text-primary">기타</span></td>
+                              <td></td>
+                              <td>Y</td>
+                              <td>1</td>
+                              <td></td>
+                              <td></td>
                             </tr>
-                            <tr>
+                            <tr class="text-center">
                               <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
-                              <td scope="row">5</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
-                              <td>Table cell</td>
+                              <td scope="row">167</td>
+                              <td>31</td>
+                              <td>qna.상태</td>
+                              <td>262</td>
+                              <td></td>
+                              <td><span class="text-primary">미확인</span></td>
+                              <td></td>
+                              <td>Y</td>
+                              <td>1</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </tbody>
                         </table>
