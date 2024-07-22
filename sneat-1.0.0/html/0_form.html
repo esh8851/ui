@@ -598,206 +598,254 @@
                       <h4 class="mt-1 mb-0"><b>기본정보</b></h4>
                     </div>
                     <div class="card-body">
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="exampleFormControlSelect1" class="form-label">코드그룹<span class="text-danger"><b>&nbsp;*</b></span></label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                              <option selected="">선택하세요</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
+                      <form class="needs-validation" novalidate>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="exampleFormControlSelect1" class="form-label">코드그룹<span class="text-danger"><b>&nbsp;*</b></span></label>
+                              <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" required>
+                                <option value="">선택하세요</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <div class="valid-feedback"> Looks good! </div>
+                              <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="exampleFormControlReadOnlyInput1" class="form-label">코드<span class="text-danger"><b>&nbsp;*</b></span></label>
-                            <input class="form-control" type="text" id="exampleFormControlReadOnlyInput1" placeholder="자동생성"
-                              readonly="">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="exampleFormControlReadOnlyInput1" class="form-label">코드<span class="text-danger"><b>&nbsp;*</b></span></label>
+                              <input class="form-control" type="text" id="exampleFormControlReadOnlyInput1" placeholder="자동생성"
+                                readonly="">
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">코드 (ANOTHER)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                              aria-describedby="defaultFormControlHelp" required>
+                              <div class="valid-feedback"> Looks good! </div>
+                              <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">코드 이름</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">코드 이름 (영문)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">코드 (ANOTHER)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="exampleFormControlSelect1" class="form-label">사용 여부<span class="text-danger"><b>&nbsp;*</b></span></label>
+                              <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" required>
+                                <option value="">선택하세요</option>
+                                <option value="1">사용</option>
+                                <option value="2">미사용</option>
+                              </select>
+                              <div class="valid-feedback"> Looks good! </div>
+                              <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">순서<span class="text-danger"><b>&nbsp;*</b></span></label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                              <div class="valid-feedback"> Looks good! </div>
+                              <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">코드 이름</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">설명</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                              <div class="valid-feedback"> Looks good! </div>
+                              <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">코드 이름 (영문)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어1</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어2</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어3</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어4</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="exampleFormControlSelect1" class="form-label">사용 여부<span class="text-danger"><b>&nbsp;*</b></span></label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                              <option selected="">Open this select menu</option>
-                              <option value="1">사용</option>
-                              <option value="2">미사용</option>
-                            </select>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어5</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어6</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어7</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">다국어8</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">순서<span class="text-danger"><b>&nbsp;*</b></span></label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비1 (VARCHAR TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비2 (VARCHAR TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비3 (VARCHAR TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비4 (VARCHAR TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">설명</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비1 (INT TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비2 (INT TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비3 (INT TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="mb-3">
+                              <label for="defaultFormControlInput" class="form-label">예비4 (INT TYPE)</label>
+                              <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
+                                aria-describedby="defaultFormControlHelp" required>
+                                <div class="valid-feedback"> Looks good! </div>
+                                <div class="invalid-feedback"> Please enter your name. </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어1</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
+                        <div class="row">
+                          <div class="col d-flex justify-content-between">
+                            <button type="button" class="btn btn-icon btn-outline-primary">
+                              <span class="tf-icons bx bx-list-ul"></span>
+                            </button>
+                            <button type="submit" class="btn btn-icon btn-primary">
+                              <span class="tf-icons bx bxs-data"></span>
+                            </button>
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어2</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어3</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어4</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어5</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어6</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어7</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">다국어8</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비1 (VARCHAR TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비2 (VARCHAR TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비3 (VARCHAR TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비4 (VARCHAR TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비1 (INT TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비2 (INT TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비3 (INT TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="mb-3">
-                            <label for="defaultFormControlInput" class="form-label">예비4 (INT TYPE)</label>
-                            <input type="text" class="form-control" id="defaultFormControlInput" placeholder="John Doe"
-                              aria-describedby="defaultFormControlHelp">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col d-flex justify-content-between">
-                          <button type="button" class="btn btn-icon btn-outline-primary">
-                            <span class="tf-icons bx bx-list-ul"></span>
-                          </button>
-                          <button type="button" class="btn btn-icon btn-primary">
-                            <span class="tf-icons bx bxs-data"></span>
-                          </button>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -872,5 +920,37 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      // Flat pickr
+      const flatPickrEL = $(".flatpickr-validation");
+      if (flatPickrEL.length) {
+        flatPickrEL.flatpickr({
+          allowInput: true,
+          monthSelectorType: "static"
+        });
+      }
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var bsValidationForms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(bsValidationForms).forEach(function(form) {
+        form.addEventListener(
+          "submit",
+          function(event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            } else {
+              // Submit your form
+              alert("Submitted!!!");
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    </script>
   </body>
 </html>
